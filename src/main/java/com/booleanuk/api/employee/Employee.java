@@ -5,21 +5,21 @@ public class Employee {
     private Integer id;
     String name;
     String jobName;
-    String salaryGrade;
-    String department;
+    int salaryID;
+    int departmentID;
 
-    public Employee(int id, String name, String jobName, String salaryGrade, String department){
+    public Employee(int id, String name, String jobName, int salaryID, int departmentID){
         this.id = id;
         this.name = name;
         this.jobName = jobName;
-        this.salaryGrade = salaryGrade;
-        this.department = department;
+        this.salaryID = salaryID;
+        this.departmentID = departmentID;
     }
-    public Employee(String name, String jobName, String salaryGrade, String department){
+    public Employee(String name, String jobName, int salaryID, int departmentID){
         this.name = name;
         this.jobName = jobName;
-        this.salaryGrade = salaryGrade;
-        this.department = department;
+        this.salaryID = salaryID;
+        this.departmentID = departmentID;
     }
 
     public Employee(){}
@@ -33,8 +33,8 @@ public class Employee {
         result += this.id + " - ";
         result += this.name  + " - ";
         result += this.jobName  + " - ";
-        result += this.salaryGrade  + " - ";
-        result += this.department;
+        result += this.salaryID  + " - ";
+        result += this.departmentID;
 
         return result;
     }
@@ -63,19 +63,19 @@ public class Employee {
         this.jobName = jobName;
     }
 
-    public String getSalaryGrade() {
-        return salaryGrade;
+    public Integer getSalaryID() {
+        return salaryID;
     }
 
-    public void setSalaryGrade(String salaryGrade) {
-        this.salaryGrade = salaryGrade;
+    public void setSalaryID(int salaryID) {
+        this.salaryID = salaryID;
     }
 
-    public String getDepartment() {
-        return department;
+    public Integer getDepartmentID() {
+        return departmentID;
     }
 
-    public void setDepartment(String department) {
-        this.department = department;
+    public void setDepartmentID(int departmentID) {
+        this.departmentID = departmentID;
     }
 }
